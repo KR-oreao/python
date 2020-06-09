@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>웹페이지의 구성 요소</title>
+    <meta charset="uft-8">
+    <style>
+        body { background-color : linen; color : green;
+                    margin-left : 40px; margin-right : 40px;}
+        h3 { text-align : center; color : darkred;}
+        hr { height : 5px; border : solid grey; 
+                    background-color : grey }
+        span { color: blue; font-size: 20px; }
+</style>
+<script>
+	function show() { // <img>에 이미지 달기
+		document.getElementById("fig").src = "oreo.jpg"
+	}
+	function hide() { // <img>에 이미지 제거
+		document.getElementById("fig").src= "";
+	}
+</script>
+
+</head>
+<body>
+    <h3 onmouseover="show()" onmouseout="hide()">
+		oreo</h3>
+    <hr>
+    <div><img id="fig" src=""></div>
+
+    he not tasty always.  
+</body>
+</html>
